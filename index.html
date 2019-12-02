@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo</title>
+
+    
+</head>
+
+<body>
+  
+    <!----------------contact start------------------->
+    <section class="contact py-5" id="contact">
+        <div class="container">
+            <div class="row">
+   
+                <div class="col-lg-7 col-md-12" data-aos="fade-left">
+                    <form class="row" role="form" id="contact_form" method="post">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="input isrequired" name="firstname" id="firstname" placeholder="First Name" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="input isrequired" name="lastname" id="lastname" placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="input isrequired" name="phonenumber" id="phonenumber" placeholder="Phone Number" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="input isrequired" name="email" id="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea placeholder="Message" name="message" id="message" class="input isrequired"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                             <div class="hidden_field">
+                                <input type="hidden" name="action" value="submit_contact">
+                            </div>
+                            <div class="form-group">
+                                <input class="submit submit_contact_btn" type="button" value="SUBMIT">
+                                <span id="buy_book_form_loding" class="qd-ajax-loader"></span>
+                            </div>
+
+                            <div id="notic_contact" class="alert"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------contact end------------------->
+    <!---- All js link------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='js/frontend-ajax.js'></script>
+
+<style>
+.isrequired.error{border-color:red;}
+.alert{background:#f3f3f3 none repeat scroll 0 0;border:1px solid;border-radius:3px;margin-bottom:10px;padding:10px;}
+.alert{display:none;}
+.alert.alert-danger{color:red;}
+.alert.alert-success{color:green;}
+
+</style>
+</body>
+</html>
