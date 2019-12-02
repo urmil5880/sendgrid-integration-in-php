@@ -17,9 +17,9 @@ $content .= "Message: $message\n <br>";
     require __DIR__ . '/sendgrid-php/vendor/autoload.php';
 
     $email = new \SendGrid\Mail\Mail();
-    $email->setFrom("contactus@argotime.app", "Argotime");
-    $email->setSubject("ArgoTime : Contact Us Inquiry");
-    $email->addTo("katese@otenet.gr", "");
+    $email->setFrom("contactus@gmail.com", "example name");
+    $email->setSubject("text name : Contact Us Inquiry");
+    $email->addTo("urmilpatel.it@gmail.com", "");
     $email->addContent("text/plain", $content);
     $email->addContent(
         "text/html", $content
